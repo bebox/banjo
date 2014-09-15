@@ -1,0 +1,172 @@
+\version "2.14.2"
+
+\header {
+    composer = "Vince Guaraldi (1928-1976)"
+    poet = "Banjo"
+    title = "LINUS & LUCY"
+    subtitle = ""
+    arranger = "arr. Bela Fleck"
+}
+
+myStaffSize = #25
+
+\include "AccordsJazzDefs.ly"
+\include "deutsch.ly"
+
+note = \relative c' {
+    \tempo 4 = 168
+    \key d \major
+%    \set Score.markFormatter = #format-mark-box-letters
+    
+    %dio A
+    \mark \default
+%    \repeat volta 2 {
+    \partial8
+		d8 ~ |
+d8 a'8 d8 d, a' d4 d,8 ~ |
+d8 a'8 h8 d, a' h a d,8 ~ |
+d8 a'8 d8 d, a' d4 d,8 ~ |
+d8 a'8 h8 d, a' h a <fis d'>8 ~ |
+\bar "||"
+\mark \default
+<fis d'>8 <a e'>8 <d fis>4 <d fis>8 <a e'> <fis d'>4 |
+<a e'>4. <fis d'>8 ~ <fis d'>4. <fis d'>8 ~ |
+<fis d'>8 <a e'>8 <d fis>4 <d fis>2 |
+r2.. <fis, d'>8 ~ |
+<fis d'>8 <a e'>8 <d fis>4 <d fis>8 <a e'> <fis d'>4 |
+<a e'>4. <fis d'>8 ~ <fis d'>4. <f d'>8 ~ |
+<f d'>4. <a e'>8 <a e'>2 |
+r2.. <fis d'>8 ~ | 
+<fis d'>4. <a e'>8 <a e'>2 |
+
+r2.. <d, fis' d'>8 ~ |
+<d fis' d'>8 <a'' e'>8 <d fis>4 <d fis>8 <a e'> <fis d'>4 |
+<d, a'' e'>4. <fis' d'>8 ~ <fis d'>4. <d, fis' d'>8 ~ |
+<d fis' d'>8 <a'' e'>8 <d fis>4 <d fis>4. d,,8 |
+r2.. <d fis' d'>8 ~ |
+<d fis' d'>8 <a'' e'>8 <d fis>4 <d fis>8 <a e'> <fis d'>4 |
+<d, a'' e'>4. <fis' d'>8 ~ <fis d'>4. <f d'>8 ~ |
+<f d'>4. <a e'>8 <a e'>4. d,,8 |
+r2.. <d fis' d'>8 ~ | 
+<d fis' d'>4. <a'' e'>8 <a e'>4.  d,,8 |
+r1 |
+\mark \default
+\once \override Score.RehearsalMark #'outside-staff-priority = #1 
+\once \override Score.RehearsalMark #'Y-offset = #-3
+\once \override Score.RehearsalMark #'X-offset = #-0.8
+\override Stem #'direction = #UP
+\bar "||" 
+<h' d g>8 <h d g>8 <h d g>8 <cis e a>8 r8 <a' d>8( h8) <h d>8 |
+<a d>8( h8) <h d>8 <a d>8( h8) <h d>8 <a d>8 r8 |
+<h, d g>8 <h d g>8 <h d g>8 <cis e a>8 r8 <a' d>8( h8) <h d>8 |
+<a d>8( h8) <h d>8 <a d>8( h8) <h d>8 <a d>8 r8 |
+<h, d g>8 <h d g>8 <h d g>8 <cis e a>8 r8 <a' d>8( h8) <h d>8 |
+<h d>8 <h d>8 <a d>8 g8 f16( fis) d8 h8 <d, d'>8 ~ |
+<d d'>8 a'8 d8 d, a' d r8 d,8 ~ |
+d8 a'8 h8 d, a' h r8 d,8 ~ |
+d8 a'8 d8 d, a' d r8 d,8 |
+
+\bar "||"
+\mark \default
+\once \override Score.RehearsalMark #'outside-staff-priority = #1 
+\once \override Score.RehearsalMark #'Y-offset = #-3
+\once \override Score.RehearsalMark #'X-offset = #-0.8
+r4 r8 <cis' e>8 ~ <cis e>8 <cis e>8 <e a>4 |
+<a cis>4 <a cis> r8 e8 a8 <a cis>8 ~ |
+<a cis>8 <a cis>4 <e a>8 ~ <e a>8 <e a>8 <a cis>4 |
+<g h>4 <g h>4 r8 d8 g8 <g h>8 ~ |
+<g h>8 <g h>4 <d g>8 r8 g,8 d'8 h |
+
+fis b cis fis b cis,8 fis8 b |
+g, d' g h( a8) g8
+cis, e |
+a cis4. ~ cis8 <dis, gis c>4 <dis gis c>8 |
+<e a cis>4 <e a cis>8 <fis a d>8 ~ <fis a d>8 \appoggiatura f16 <fis a d>4 <e a cis>8 ~ |
+q <e a cis>8 <e a cis>4 <fis a d>8 <fis a d>8 <fis a d>4 |
+<e a cis>8 <e a cis>8 <e a cis>8 \appoggiatura f16 <fis a d>8 ~ <fis a d>  <e a cis>4 <h g'>8 ~ | 
+q <d a'>4 <g h>8 ~ q e8 c'8 <g h>8 ~ |
+q <d a'>4 <h g'>8 ~ q <g d'>8 <h d g>4 |
+fis8 b cis fis b cis,8 fis b |
+g, d' g h( a8) g8 dis8 gis |
+c4 dis8 c8 gis4. e'8 |
+\times 2/3 { cis a cis8}  \times 2/3 {a e a8} \times 2/3 {e cis e8 } cis16 a16 d,8 |
+
+\bar "||"
+\mark \default
+\once \override Score.RehearsalMark #'outside-staff-priority = #1 
+\once \override Score.RehearsalMark #'Y-offset = #-3
+\once \override Score.RehearsalMark #'X-offset = #-0.8
+r4. <h' d g>8 ~ q <h d g>8 <h d g>8 a |
+<d fis>4 <d fis>4 d,8 d'8 a8 cis8 ~ |
+cis8 e8 d,8 <h' d g>8 <h d g>8 <h d g>8 <h d g>8 a8 |
+<d fis>4 <d fis>4 d,8 d'8 a8 cis8 ~ |
+cis8 e8 a,8 ais( h) g' h, gis |
+<d' fis>4 <d fis>4 <g, e'>8 <g e'>8 r8 <fis a>8 ~ |
+q d'8 r8 <f, gis d'>8 ~ q4 r4 |
+r8 <d' fis>4 <d fis>8 <g, e'>8 <g e'>8 r8 <fis a d>8 ~ |
+q4 r8 <f gis d'>8 ~ q4 r4 |
+<d' fis>4 <d fis>4 <g, e'>8 <g e'>
+r8 <fis a d>8 ~ |
+q4 r8 <f gis d'>8 ~ q4 r8 <e g>8 |
+d'4 d8 h d8 fis8 ~ fis8 <a, d>8 ~ |
+<a d>2. r4 |
+\bar "|."
+}
+
+akordi = \chordmode {
+   \set chordChanges = ##t
+	s8 d1 d:6 d1 d:6 
+	%dio2
+ \repeat unfold 2 {
+ 	d1 d:6 d d:6
+ 	d1 d:6 f1 f:6
+ 	d1 d:6 }
+	%dio3
+	\repeat unfold 3 { g2 a2 | r1 | }
+	d1 d:6 d1 r1 |
+	a1 | a1 |
+	g1 | a1 |
+	fis1 fis1 a a
+	a1 a g g fis g gis a
+
+	%dio5
+	r1 |
+	d1/a a2 g/d
+	d1/a a2 g/d
+	as:m7.5- g:6 d/fis f:dim
+	as:m7.5- g:6 d/fis f:dim
+	as:m7.5- g:6 d/fis f:dim
+	e:m7 a d1
+
+
+
+}
+
+%kiticaA = \lyricmode {
+%\set stanza = #"1. "
+%\skip4 \skip4
+%}
+
+%ref = \lyricmode {
+%}
+
+%kiticaB = \lyricmode {
+%\set stanza = #"2. "
+%}
+
+%kiticaC = \lyricmode {
+%\set stanza = #"3. "
+%\skip4 \skip4
+%}
+
+\score {
+	<<
+	\new ChordNames { \semiGermanChords \akordi }
+	\new Staff { \note }
+%        \addlyrics { \kiticaA \ref }
+%        \addlyrics { \kiticaB }
+%        \addlyrics { \kiticaC }
+	>>
+	\layout {}
+	\midi {}
+}	
